@@ -1,0 +1,27 @@
+class Test {
+    @test.only
+    ~~~~~~~~~~  [mocha-typescript-no-only]
+    bla() {}
+}
+
+class Test {
+    @test
+    @only
+    ~~~~~  [mocha-typescript-no-only]
+    bla() {}
+}
+
+class Test {
+    @only
+    ~~~~~  [mocha-typescript-no-only]
+    @test
+    bla() {}
+}
+
+class Test {
+    @test.only('bla')
+    ~~~~~~~~~~~~~~~~~  [mocha-typescript-no-only]
+    bla() {}
+}
+
+[mocha-typescript-no-only]: @only tests are not allowed

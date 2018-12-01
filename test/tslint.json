@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": "../dist",
+  "rules": {
+    "mocha-typescript-no-only": true
+  }
+}

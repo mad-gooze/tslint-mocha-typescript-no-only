@@ -1,0 +1,28 @@
+{
+  "name": "tslint-mocha-typescript-no-only",
+  "version": "1.0.0",
+  "description": "Disallows @only suites and tests with mocha-typescript",
+  "main": "dist/index.js",
+  "repository": "https://github.com/mad-gooze/tslint-mocha-typescript-no-only.git",
+  "author": "Alexey Gusev <mad.gooze@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^10.12.11",
+    "prettier": "^1.15.3",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.17.0",
+    "typescript": "^3.2.1"
+  },
+  "peerDependencies": {
+    "tslint": "^5.11.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prettier": "prettier --config prettier.config.js --list-different 'src/**/*ts'",
+    "prettier:fix": "prettier --config prettier.config.js --write 'src/**/*ts'",
+    "tslint": "tslint -e \"node_modules/**/*.ts\" --project tsconfig.json \"**/*.ts\"",
+    "tslint:fix": "tslint -e \"node_modules/**/*.ts\" --project tsconfig.json \"**/*.ts\" --fix",
+    "test": "tslint --test test"
+  }
+}

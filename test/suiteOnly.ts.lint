@@ -1,0 +1,23 @@
+@suite.only('bla')
+~~~~~~~~~~~~~~~~~~ [mocha-typescript-no-only]
+class Test {}
+
+@suite.only
+~~~~~~~~~~~  [mocha-typescript-no-only]
+class Test {}
+
+@only
+~~~~~  [mocha-typescript-no-only]
+class Test {}
+
+@only
+~~~~~  [mocha-typescript-no-only]
+@suite
+class Test {}
+
+@suite
+@only
+~~~~~  [mocha-typescript-no-only]
+class Test {}
+
+[mocha-typescript-no-only]: @only tests are not allowed
