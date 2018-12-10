@@ -1,6 +1,6 @@
 {
   "name": "tslint-mocha-typescript-no-only",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Disallows @only suites and tests with mocha-typescript",
   "main": "dist/index.js",
   "repository": "https://github.com/mad-gooze/tslint-mocha-typescript-no-only.git",
