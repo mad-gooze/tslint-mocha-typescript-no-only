@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "prepublish": "yarn build",
     "prettier": "prettier --config prettier.config.js --list-different 'src/**/*ts'",
     "prettier:fix": "prettier --config prettier.config.js --write 'src/**/*ts'",
     "tslint": "tslint -e \"node_modules/**/*.ts\" --project tsconfig.json \"**/*.ts\"",

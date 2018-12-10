@@ -139,5 +139,5 @@ typings/
 # Serverless directories
 .serverless
 
-.idea
-dist
+.idea/
+dist/
