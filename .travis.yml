@@ -1,0 +1,6 @@
+language: node_js
+script:
+  - yarn build
+  - yarn test
+  - yarn prettier
+  - yarn tslint
