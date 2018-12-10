@@ -10,14 +10,14 @@ or for yarn:
 yarn add -D tslint-mocha-typescript-no-only
 ```
 
-then add the following to your `tslint.json`:
+then add the following lines to your `tslint.json`:
 ```json
 {
-    "rulesDirectory": [
-        "tslint-mocha-typescript-no-only"
-    ],
-    "rules": {
-        "tslint-mocha-typescript-no-only": true
-    }
+  "rulesDirectory": [
+      "tslint-mocha-typescript-no-only"
+  ],
+  "rules": {
+    "mocha-typescript-no-only": true
+  }
 }
 ```
